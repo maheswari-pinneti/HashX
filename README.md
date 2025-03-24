@@ -1,8 +1,23 @@
-# HashX - High-Performance 256-bit Hashing Algorithm  
+# ⚡ HashX – High-Performance 256-bit Hashing Algorithm  
 
-HashX is an ultra-fast, efficient, and **secure 256-bit hashing algorithm** designed for **data integrity verification, indexing, checksums, and non-cryptographic applications**.  
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0-blue.svg" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+  <img src="https://img.shields.io/github/stars/ProgrammerKR/HashX.svg?style=flat" />
+  <img src="https://img.shields.io/github/forks/ProgrammerKR/HashX.svg?style=flat" />
+  <img src="https://img.shields.io/github/downloads/ProgrammerKR/HashX/total" />
+  <img src="https://img.shields.io/github/repo-size/ProgrammerKR/HashX" />
+  <img src="https://img.shields.io/github/issues/ProgrammerKR/HashX" />
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" />
+  <img src="https://img.shields.io/github/last-commit/ProgrammerKR/HashX" />
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20MacOS-lightgrey.svg" />
+</p>
 
-Built with **multi-threading, optimized bitwise operations, and an advanced mixing function**, HashX delivers exceptional **speed, collision resistance, and scalability**.  
+---
+
+#### HashX is an ultra-fast, efficient, and **secure 256-bit hashing algorithm** designed for **data integrity verification, indexing, checksums, and non-cryptographic applications**.  
+
+#### Built with **multi-threading, optimized bitwise operations, and an advanced mixing function**, HashX delivers exceptional **speed, collision resistance, and scalability**.  
 
 ## 🚀 Features & Enhancements  
 
@@ -14,6 +29,8 @@ Built with **multi-threading, optimized bitwise operations, and an advanced mixi
 ✅ **Lightweight & Scalable** – Low memory usage, works on large data sets.  
 ✅ **Strong Avalanche Effect** – Small input changes drastically modify the hash.  
 ✅ **Cross-Platform & Extensible** – Works seamlessly in Python, with future support planned for C/Rust.  
+
+----
 
 ## 📥 Installation  
 
