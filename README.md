@@ -19,7 +19,7 @@ Built with **multi-threading, optimized bitwise operations, and an advanced mixi
 
 Clone the repository:  
 ```bash
-git clone https://github.com/your-username/HashX.git
+git clone https://github.com/ProgrammerKR/HashX.git
 ```
 Navigate to the directory:  
 ```bash
