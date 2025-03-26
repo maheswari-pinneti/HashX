@@ -1,4 +1,7 @@
 # ⚡ HashX – High-Performance 256-bit Hashing Algorithm  
+## HashX – The simplest & fastest open-source hashing library!
+
+---
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0-blue.svg" />
