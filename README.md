@@ -110,7 +110,7 @@ HashX has been tested against **SHA-256, BLAKE3, xxHash, and MurmurHash3** for s
 
 For detailed benchmark results, check the full report:  
 [📊 Benchmark Results](benchmark_results.md)
----
+
 
 ## 🛠️ Future Plans  
 
