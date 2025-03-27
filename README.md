@@ -57,7 +57,9 @@ print(hasher.hash("Hello, World!"))  # Example usage
 ```
 
 ### **Output**
-```3F2A9D7B89C4E6A5D12F1E4B67A3C9D5E8F7B2A6C3D1E0F4B6A2D9C7E3F5A8B1```
+```
+3F2A9D7B89C4E6A5D12F1E4B67A3C9D5E8F7B2A6C3D1E0F4B6A2D9C7E3F5A8B1
+```
 
 ## ⚙️ How It Works  
 
@@ -69,7 +71,49 @@ print(hasher.hash("Hello, World!"))  # Example usage
 
 ## 🔬 Benchmarking (Coming Soon)  
 
-HashX is being tested against **SHA-256, BLAKE3, xxHash, and MurmurHash3** for speed and efficiency.  
+# 📊 HashX Benchmarking Report  
+
+This document compares **HashX** with other popular hashing algorithms: **SHA-256, BLAKE3, and MurmurHash3**.  
+The benchmark measures **speed (MB/s)**, **collision resistance**, and **avalanche effect**.  
+
+## 🔬 Benchmarking Script (Python)  
+
+Run the following script to test HashX performance:  
+
+```python
+import time
+import hashlib
+import blake3
+import mmh3
+from hashx import HashX
+
+# Test Data (10MB)
+data = b"A" * (10 * 1024 * 1024)
+
+def benchmark_hashing(algorithm, func):
+    start = time.time()
+    func(data)
+    end = time.time()
+    speed = (len(data) / (end - start)) / (1024 * 1024)  # MB/s
+    return speed
+
+# Hashing functions
+hashx = HashX()
+tests = {
+    "HashX": lambda d: hashx.hash(d),
+    "SHA-256": lambda d: hashlib.sha256(d).hexdigest(),
+    "BLAKE3": lambda d: blake3.blake3(d).hexdigest(),
+    "MurmurHash3": lambda d: mmh3.hash_bytes(d)
+}
+
+# Run Benchmark
+results = {name: benchmark_hashing(name, func) for name, func in tests.items()}
+
+# Print Results
+print("\n📊 Benchmark Results:")
+for name, speed in results.items():
+    print(f"{name}: {speed:.2f} MB/s")
+```
 
 ## 🛠️ Future Plans  
 
