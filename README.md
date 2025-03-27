@@ -56,6 +56,9 @@ hasher = HashX()
 print(hasher.hash("Hello, World!"))  # Example usage
 ```
 
+### **Output**
+```3F2A9D7B89C4E6A5D12F1E4B67A3C9D5E8F7B2A6C3D1E0F4B6A2D9C7E3F5A8B1```
+
 ## ⚙️ How It Works  
 
 1. **Initialization** – Hash state consists of **4 unique parts**, seeded for strong uniqueness.  
@@ -72,7 +75,11 @@ HashX is being tested against **SHA-256, BLAKE3, xxHash, and MurmurHash3** for s
 
 - **C and Rust Implementation** for ultra-fast performance.  
 - **GPU Acceleration** using CUDA/OpenCL.  
-- **Cryptographic Security Mode** for password hashing.  
+- **Cryptographic Security Mode** for password hashing.
+
+📢 **Have questions or feedback?**  
+- 💬 Join discussions [here](https://github.com/ProgrammerKR/HashX/discussions)  
+- 🐛 Found a bug? Report [here](https://github.com/ProgrammerKR/HashX/issues)
 
 ## 🤝 Contributing  
 
@@ -81,3 +88,4 @@ Contributions are welcome! Feel free to fork the repo, submit issues, or create 
 ## 📜 License  
 
 This project is open-source and available under the **MIT License**.  
+
